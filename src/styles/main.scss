@@ -1,3 +1,11 @@
+// ALL
+$linkColor: #415399;
+$breadcrumbLinkItemColor: #929293;
+$contentBackgroundColor: #E7E9F3;
+$wrapperPadding: 10px 120px 40px 120px;
+$sideMenuWidth: 230px;
+$lightGrayColor: #9B9B9B;
+
 * {
     font-family: sans-serif;
 }
@@ -6,9 +14,13 @@ body {
     margin: 0;
 }
 
+// HEADER
+$backgroundColor: #384783;
+
 .header {
-    background-color: #384783;
+    background-color: $backgroundColor;
     font-size: 14px;
+    padding: 15px;
     h1 {
         display: inline;
     }
@@ -16,7 +28,7 @@ body {
         padding: 8px;
     }
     img {
-        margin: 15px 30px;
+        margin: 0 30px;
         vertical-align: middle;
     }
     button, input, span {
@@ -30,6 +42,10 @@ body {
         border-radius: 5px;
         padding-left: 20px;
         padding-right: 20px;
+        text-transform: uppercase;
+    }
+    span {
+        text-transform: uppercase;
     }
     button:hover {
         background-color:rgba(255, 255, 255, 0.4);
@@ -42,6 +58,7 @@ body {
     ul, li {
         color: white;
         display: inline;
+        text-transform: uppercase;
     }
     .menu li {
         margin: 10px;
@@ -53,25 +70,31 @@ body {
         background-position-y: center;
         background-position-x: right;
     }
+    .searchbar {
+        border-radius: 5px;
+        background-color: #1F2B59;
+        background-image: url("../images/search.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 10px;
+        padding: 8px 8px 8px 45px;
+        width: 20%;
+    }
+    .searchbar::placeholder {
+        color: white;
+    }
 }
 
-
-.searchbar {
-    border-radius: 5px;
-    background-color: #1F2B59;
-    background-image: url("../images/search.png");
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 10px;
-    padding: 8px 8px 8px 45px;
-    width: 20%;
-}
-.searchbar::placeholder {
-    color: white;
+.wrapper {
+    padding: $wrapperPadding;
+    background-color: $contentBackgroundColor;
 }
 
 .content {
-    background-color: #E7E9F3;
+    background-color: $contentBackgroundColor;
+    .side {
+        width: $sideMenuWidth;
+    }
 }
 
 .header {

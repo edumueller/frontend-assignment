@@ -3,19 +3,19 @@
     <div class="header">
       <img src="../images/logo-pink.png" alt="logo">
       <input class="searchbar" type="text" placeholder="Search Companies">
-      <span>OR</span>
+      <span>or</span>
       <button>
-        NEW SMARTLIST
+        new smartlist
       </button>
       <ul class="menu">
         <li>
-          PROSPECT
+          prospect
         </li>
         <li>
-          ALERT
+          alert
         </li>
         <li>
-          LEARN
+          learn
         </li>
       </ul>
     </div>
