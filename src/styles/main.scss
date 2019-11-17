@@ -97,6 +97,129 @@ $backgroundColor: #384783;
     }
 }
 
-.header {
-    background-color: #384783;
+.footer {
+    padding: $wrapperPadding;
+    background-color: white;
+    $bottomMenuHeigth: 10px;
+    ul {
+        display: inline-block;
+        line-height: $bottomMenuHeigth;
+        overflow: hidden;
+    }
+    .bottom-menu {
+        list-style: none;
+        padding: 0;
+        li {
+            display: inline;
+            border-left: 1px solid $breadcrumbLinkItemColor;
+            padding: 0 10px;
+        }
+        li:first-child {
+            border-left: none;
+            padding-left: 0;
+        }
+        a {
+            color: $linkColor;
+            text-decoration: none;
+            font-size: $bottomMenuHeigth;
+        }
+    }
+    .bottom-menu.icons {
+        margin: 0;
+    }
+    .bottom-menu.icons li {
+        padding: 0 10px 0 0;
+        border: 0;
+    }
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.copyright {
+    float: left;
+    clear: both;
+    font-size: 10px;
+    color: $lightGrayColor;
+}
+
+.breadcrumb {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 0;
+    list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    color: $breadcrumbLinkItemColor;
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: $breadcrumbLinkItemColor;
+    content: "/\00a0";
+    font-size: 12px;
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: $breadcrumbLinkItemColor;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+}
+
+$sideMenuBorderColor: #D4D9E3;
+
+ul.side-menu {
+    padding: 0;
+    margin: 10px 0;
+    border: 1px solid $sideMenuBorderColor;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.side-menu {
+    list-style: none;
+    ul {
+        border: 1px solid $sideMenuBorderColor;
+        margin-left: 10px;
+    }
+    li {
+        border-bottom: 1px solid $sideMenuBorderColor;
+        padding: 20px;
+        background-color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    li:last-child {
+        border-bottom: none;
+    }
+    a {
+        color: $linkColor;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .selected {
+        border-left: 3px solid #344279;
+        a {
+            color: #505050;
+        }
+    }
 }
