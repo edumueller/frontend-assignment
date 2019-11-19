@@ -5,13 +5,29 @@ $contentBackgroundColor: #E7E9F3;
 $wrapperPadding: 10px 120px 40px 120px;
 $sideMenuWidth: 230px;
 $lightGrayColor: #9B9B9B;
+$mediumGrayColor: #666666;
 
 * {
     font-family: sans-serif;
 }
-
 body {
     margin: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.iconize {
+    background-color: white;
+    border-radius: 50%;
+    padding: 1px;
 }
 
 // HEADER
@@ -20,15 +36,18 @@ $backgroundColor: #384783;
 .header {
     background-color: $backgroundColor;
     font-size: 14px;
-    padding: 15px;
+    padding: 15px 60px 15px 40px;
+    .logo {
+        margin-right: 30px;
+    }
     h1 {
         display: inline;
     }
     span {
         padding: 8px;
+        text-transform: uppercase;
     }
     img {
-        margin: 0 30px;
         vertical-align: middle;
     }
     button, input, span {
@@ -44,16 +63,9 @@ $backgroundColor: #384783;
         padding-right: 20px;
         text-transform: uppercase;
     }
-    span {
-        text-transform: uppercase;
-    }
     button:hover {
         background-color:rgba(255, 255, 255, 0.4);
         cursor: pointer;
-    }
-    ul {
-        margin: 0;
-        padding: 0;
     }
     ul, li {
         color: white;
@@ -83,31 +95,76 @@ $backgroundColor: #384783;
     .searchbar::placeholder {
         color: white;
     }
+    .icons {
+        padding-top: 3px;
+        li {
+            margin-left: 10px;
+        }
+        li:last-child {
+            margin-left: 0;
+        }
+    }
 }
 
 .wrapper {
     padding: $wrapperPadding;
-    background-color: $contentBackgroundColor;
 }
 
 .content {
+    width: 100%;
     background-color: $contentBackgroundColor;
     .side {
         width: $sideMenuWidth;
     }
 }
 
+.main {
+    margin: 0 20px;
+    color: #343434;
+    width: 65%;
+    h1 {
+        margin: 0;
+        vertical-align: top;
+        font-weight: 100;
+        display: inline-block;
+    }
+    .company-location {
+        display: flex;
+        color: $mediumGrayColor;
+        font-size: 12px;
+    }
+    .company-location::before {
+        margin-right: 10px;
+        content: url('../images/location.png');
+    }
+    .activity {
+        float: left;
+        display: inline-block;
+        background-color: white;
+        margin-top: 10px;
+        height: 400px;
+        width: 49%;
+    }
+    .similar-companies, .spend-history {
+        float: left;
+        display: inline-block;
+        background-color: white;
+        margin-top: 10px;
+        margin-left: 1%;
+        height: 100px;
+        width: 49%;
+    }
+}
 .footer {
-    padding: $wrapperPadding;
     background-color: white;
     $bottomMenuHeigth: 10px;
     ul {
+        margin: 20px 0;
         display: inline-block;
         line-height: $bottomMenuHeigth;
         overflow: hidden;
     }
     .bottom-menu {
-        list-style: none;
         padding: 0;
         li {
             display: inline;
@@ -124,23 +181,14 @@ $backgroundColor: #384783;
             font-size: $bottomMenuHeigth;
         }
     }
-    .bottom-menu.icons {
-        margin: 0;
-    }
-    .bottom-menu.icons li {
-        padding: 0 10px 0 0;
-        border: 0;
-    }
 }
-
-.float-left {
-    float: left;
+.bottom-menu.icons {
+    margin: 0;
 }
-
-.float-right {
-    float: right;
+.bottom-menu.icons li {
+    padding: 0 10px 0 0;
+    border: 0;
 }
-
 .copyright {
     float: left;
     clear: both;
@@ -155,8 +203,7 @@ $backgroundColor: #384783;
 
 /* Style the list */
 ul.breadcrumb {
-    padding: 10px 0;
-    list-style: none;
+    padding: 10px 0 20px 0;
 }
 
 /* Display list items side by side */
@@ -190,14 +237,12 @@ $sideMenuBorderColor: #D4D9E3;
 
 ul.side-menu {
     padding: 0;
-    margin: 10px 0;
     border: 1px solid $sideMenuBorderColor;
     border-radius: 5px;
     overflow: hidden;
 }
 
 .side-menu {
-    list-style: none;
     ul {
         border: 1px solid $sideMenuBorderColor;
         margin-left: 10px;
