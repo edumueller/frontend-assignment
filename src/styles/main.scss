@@ -6,6 +6,8 @@ $wrapperPadding: 10px 120px 40px 120px;
 $sideMenuWidth: 230px;
 $lightGrayColor: #9B9B9B;
 $mediumGrayColor: #666666;
+$mediumDarkGrayColor: #606060;
+$sideMenuBorderColor: #D4D9E3;
 
 * {
     font-family: sans-serif;
@@ -140,10 +142,54 @@ $backgroundColor: #384783;
     .activity {
         float: left;
         display: inline-block;
-        background-color: white;
         margin-top: 10px;
         height: 400px;
         width: 49%;
+        ul {
+            padding: 0;
+            background-color: #FFFFFF;
+            border: 1px solid $sideMenuBorderColor;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        li:first-child {
+            display: block;
+        }
+        li {
+            width: -webkit-fill-available;
+            display: inline-flex;
+            padding: 10px 15px;
+            border-bottom: 1px solid $sideMenuBorderColor;
+            h1 {
+                color: $mediumDarkGrayColor;
+                font-size: 12px;
+                font-weight: bolder;
+                text-transform: uppercase;
+            }
+            div {
+                float: left;
+                p {
+                    padding: 0;
+                    margin: 7px;
+                }
+            }
+            div:first-of-type {
+                min-width: fit-content;
+                img {
+                    padding-left: 15px;
+                }
+            }
+            span, img, p {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            span {
+                width: max-content;
+                color: $lightGrayColor;
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
     }
     .similar-companies, .spend-history {
         float: left;
@@ -200,19 +246,16 @@ $backgroundColor: #384783;
     margin: 0;
     text-transform: uppercase;
 }
-
 /* Style the list */
 ul.breadcrumb {
     padding: 10px 0 20px 0;
 }
-
 /* Display list items side by side */
 ul.breadcrumb li {
     color: $breadcrumbLinkItemColor;
     display: inline;
     font-size: 18px;
 }
-
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
     padding: 8px;
@@ -220,20 +263,16 @@ ul.breadcrumb li+li:before {
     content: "/\00a0";
     font-size: 12px;
 }
-
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
     color: $breadcrumbLinkItemColor;
     text-decoration: none;
     font-size: 12px;
 }
-
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
     color: #01447e;
 }
-
-$sideMenuBorderColor: #D4D9E3;
 
 ul.side-menu {
     padding: 0;

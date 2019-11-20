@@ -39,21 +39,47 @@
         </div>
       </div>
       <div class="main float-left">
-        <img class="float-left company-logo" style="padding: 15px; background-color: white; border-radius: 5px; box-shadow: 1px 1px 3px #bcbcbc;" src="../images/squares.png" />
-        <div style="margin-left: 15px; display: inline-block;">
-          <h1>Microsoft</h1>
-          <p class="company-location">Redmond, WA USA</p>
+        <div>
+          <img class="float-left company-logo" style="padding: 15px; background-color: white; border-radius: 5px; box-shadow: 1px 1px 3px #bcbcbc;" src="../images/squares.png" />
+            <div style="margin-left: 15px; display: inline-block;">
+              <h1>Microsoft</h1>
+              <p class="company-location">Redmond, WA USA</p>
+            </div>
+            <p>
+              At Microsoft, our mission is to empower every person and every organization on the planet to achieve more. Our mission is grounded in both the world in which we live and the future we strive to create. <a href="#">View More...</a>
+            </p>
         </div>
-        <p>
-          At Microsoft, our mission is to empower every person and every organization on the planet to achieve more. Our mission is grounded in both the world in which we live and the future we strive to create. <a href="#">View More...</a>
-        </p>
-          <!--        <p>-->
-<!--          At Microsoft, our mission is to empower every person and every organization on the planet to achieve more. Our mission is grounded in both the world in which we live and the future we strive to create. Today, we live in a mobile-first, cloud-first world, and the transformation we are driving across our businesses is designed to enable Microsoft and our customers to thrive in this world.-->
-<!--        </p>-->
         <div class="activity">
-          <ul>Activities
+          <ul>
             <li>
-              <p>Cloud Orchestration replaced Microsoft on 1 property</p>
+              <h1>Activities</h1>
+            </li>
+            <li>
+              <div>
+                <span>8 days ago </span>
+                <img class="iconize" src="../images/chrome-copy-7.png" alt="company logo icon" />
+              </div>
+              <div>
+                <p>Cloud Orchestration replaced Microsoft on 1 property</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>8 days ago </span>
+                <img class="iconize" src="../images/chrome-copy-7.png" alt="company logo icon" />
+              </div>
+              <div>
+                <p>Cloud Orchestration replaced Microsoft on 1 property</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>8 days ago </span>
+                <img class="iconize" src="../images/chrome-copy-7.png" alt="company logo icon" />
+              </div>
+              <div>
+                <p>Cloud Orchestration replaced Microsoft on 1 property</p>
+              </div>
             </li>
           </ul>
         </div>
